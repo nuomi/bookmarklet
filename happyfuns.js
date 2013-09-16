@@ -5,7 +5,7 @@ var node = "";
 for(var i = 0; i < linkscount; i++){
         node = document.getElementsByTagName('a')[i];
             url = node.href;
-                if(url.substr(0,11) == "magnet:?xt="){
+                if(url.substr(0,11) == "magnet:?xt=" || url.substr(0,7)=="ed2k://"){
                             node.href = "http://www.happyfuns.com/happyvod/api.php#!url="+ url ;
                                 }
 }
