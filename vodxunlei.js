@@ -6,7 +6,7 @@ for(var i = 0; i < linkscount; i++){
             node = document.getElementsByTagName('a')[i];
                         url = node.href;
                                         if(url.substr(0,11) == "magnet:?xt=" || url.substr(0,7)=="ed2k://"){
-                                                                        node.href = "http://vod.xunlei.com/iplay.html?uvs=_4_&tryplay=1&from=vodHome&url="+ encodeURIComponent(url) ;
+                                                                        node.href = "http://vod.xunlei.com/share.html?url="+ encodeURIComponent(url) ;
                                                                                                         }
 }
 
